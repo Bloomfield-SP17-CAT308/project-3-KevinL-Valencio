@@ -1,0 +1,688 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>23900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>640</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="player" sid="374587082996670">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="676985846452512">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="827181315349224">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="285179887405969" speed="5">
+                    <frame duration="1" hotspotX="0.571429" hotspotY="0.5" original-source="C:\Users\heros\Desktop\Player.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="platform" sid="522525254009337">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="949585727405875">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="419820405176406" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Redindicator" sid="864758284668598">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="518230132934874" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\heros\Desktop\Keys.png">
+                        <collision-poly>
+                            <point x="0.194106" y="0.194106" />
+                            <point x="0.5" y="0.370257" />
+                            <point x="0.564024" y="0.435976" />
+                            <point x="0.796409" y="0.5" />
+                            <point x="0.85603" y="0.85603" />
+                            <point x="0.5" y="0.498645" />
+                            <point x="0.500678" y="0.499323" />
+                            <point x="0.154133" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="redkey" sid="400569134520186">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="179590507470661" speed="5">
+                    <frame duration="1" hotspotX="0.588" hotspotY="0.668" original-source="C:\Users\heros\Desktop\Keys.png">
+                        <collision-poly>
+                            <point x="0.193295" y="0.151539" />
+                            <point x="0.502224" y="0.35411" />
+                            <point x="0.566883" y="0.429684" />
+                            <point x="0.801574" y="0.503311" />
+                            <point x="0.861786" y="0.912739" />
+                            <point x="0.502224" y="0.501753" />
+                            <point x="0.502908" y="0.502532" />
+                            <point x="0.152925" y="0.503311" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="reddoor" sid="700007631413305">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="oppen" sid="417497926494601" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="832301255277392">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="236098784342081" speed="5">
+                    <frame duration="1" hotspotX="0.508772" hotspotY="0.507674" original-source="C:\Users\heros\Desktop\DoorRed.png">
+                        <collision-poly>
+                            <point x="0.00779727" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="starwell" sid="957653736025822">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="838347884535769" speed="5">
+                    <frame duration="1" hotspotX="0.476" hotspotY="0.504" original-source="C:\Users\heros\Desktop\Staircase.png">
+                        <collision-poly>
+                            <point x="0.00825824" y="0.531986" />
+                            <point x="0.477477" y="0.0072075" />
+                            <point x="0.978369" y="0.496475" />
+                            <point x="0.978369" y="0.514888" />
+                            <point x="0.477477" y="0.991004" />
+                            <point x="0.00825824" y="0.479377" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="greendoor" sid="279322760162757">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="open" sid="982420946464025" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="107888333553458">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="180538792422761" speed="5">
+                    <frame duration="1" hotspotX="0.493177" hotspotY="0.493506" original-source="C:\Users\heros\Desktop\DoorGreen.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="greenkey" sid="395524984291212">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="856712476548765" speed="5">
+                    <frame duration="1" hotspotX="0.584" hotspotY="0.644" original-source="C:\Users\heros\Desktop\Keys3.png">
+                        <collision-poly>
+                            <point x="0.194106" y="0.194106" />
+                            <point x="0.5" y="0.370257" />
+                            <point x="0.564024" y="0.435976" />
+                            <point x="0.796409" y="0.5" />
+                            <point x="0.85603" y="0.85603" />
+                            <point x="0.5" y="0.498645" />
+                            <point x="0.500678" y="0.499323" />
+                            <point x="0.154133" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="greenindecator" sid="954071297760381">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="904055735333110" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\heros\Desktop\Keys3.png">
+                        <collision-poly>
+                            <point x="0.194106" y="0.194106" />
+                            <point x="0.5" y="0.370257" />
+                            <point x="0.564024" y="0.435976" />
+                            <point x="0.796409" y="0.5" />
+                            <point x="0.85603" y="0.85603" />
+                            <point x="0.5" y="0.498645" />
+                            <point x="0.500678" y="0.499323" />
+                            <point x="0.154133" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Yellowdoor" sid="271297853743553">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="open" sid="164167904402731" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="841918018809939">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="985918894949072" speed="5">
+                    <frame duration="1" hotspotX="0.508772" hotspotY="0.507674" original-source="C:\Users\heros\Desktop\DoorYellow.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="yellowindecator" sid="480019457542430">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="469886225074813" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\heros\Desktop\Keys2.png">
+                        <collision-poly>
+                            <point x="0.194106" y="0.194106" />
+                            <point x="0.5" y="0.370257" />
+                            <point x="0.564024" y="0.435976" />
+                            <point x="0.796409" y="0.5" />
+                            <point x="0.85603" y="0.85603" />
+                            <point x="0.5" y="0.498645" />
+                            <point x="0.500678" y="0.499323" />
+                            <point x="0.154133" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Yellowkey" sid="660202021548173">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="453461524614019" speed="5">
+                    <frame duration="1" hotspotX="0.584" hotspotY="0.644" original-source="C:\Users\heros\Desktop\Keys2.png">
+                        <collision-poly>
+                            <point x="0.194106" y="0.194106" />
+                            <point x="0.5" y="0.370257" />
+                            <point x="0.564024" y="0.435976" />
+                            <point x="0.796409" y="0.5" />
+                            <point x="0.85603" y="0.85603" />
+                            <point x="0.5" y="0.498645" />
+                            <point x="0.500678" y="0.499323" />
+                            <point x="0.154133" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BG" sid="865651955892786">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="141603060201521" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\heros\Desktop\Game_BG.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bluedoor" sid="159767134407532">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="open" sid="854687199052061" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="962034303994524">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="779101923137260" speed="5">
+                    <frame duration="1" hotspotX="0.508772" hotspotY="0.507674" original-source="C:\Users\heros\Desktop\DoorBlue.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.976608" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bluekey" sid="204046417411112">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="821054903210730" speed="5">
+                    <frame duration="1" hotspotX="0.584" hotspotY="0.644" original-source="C:\Users\heros\Desktop\Keys1.png">
+                        <collision-poly>
+                            <point x="0.194106" y="0.194106" />
+                            <point x="0.5" y="0.370257" />
+                            <point x="0.564024" y="0.435976" />
+                            <point x="0.796409" y="0.5" />
+                            <point x="0.85603" y="0.85603" />
+                            <point x="0.5" y="0.498645" />
+                            <point x="0.500678" y="0.499323" />
+                            <point x="0.154133" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="blueindecator" sid="590375174503233">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="111633978431298" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\heros\Desktop\Keys1.png">
+                        <collision-poly>
+                            <point x="0.194106" y="0.194106" />
+                            <point x="0.5" y="0.370257" />
+                            <point x="0.564024" y="0.435976" />
+                            <point x="0.796409" y="0.5" />
+                            <point x="0.85603" y="0.85603" />
+                            <point x="0.5" y="0.498645" />
+                            <point x="0.500678" y="0.499323" />
+                            <point x="0.154133" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="starwell2" sid="127913708338789">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="144962478467215" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="redgate" sid="243961552953850">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="open" sid="169927674997961" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="890380159237032">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="485139939541642" speed="5">
+                    <frame duration="1" hotspotX="0.492" hotspotY="0.496" original-source="C:\Users\heros\Desktop\Gate_Red.png">
+                        <collision-poly>
+                            <point x="0.00131666" y="0.184793" />
+                            <point x="0.490454" y="0.120308" />
+                            <point x="0.998683" y="0.156882" />
+                            <point x="0.998683" y="0.834456" />
+                            <point x="0.490454" y="0.857555" />
+                            <point x="0.00131666" y="0.806545" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="redlever" sid="934195376346713">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="on" sid="394874051233771" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="616245785269003">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="648380549402213" speed="0">
+                    <frame duration="1" hotspotX="0.532051" hotspotY="0.369863" original-source="C:\Users\heros\Desktop\RedSwitch_OFF.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.467949" hotspotY="0.369863">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="394339548931516">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Audio" sid="964501456570029">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="gen" sid="802215914397478">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="greenredgate" sid="383989510917176">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="open" sid="509265650041574" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="736941055432493">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="625923423184731" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\heros\Desktop\Gate_Green.png">
+                        <collision-poly>
+                            <point x="0.113021" y="0.200926" />
+                            <point x="0.5" y="0.138889" />
+                            <point x="0.902083" y="0.174074" />
+                            <point x="0.902083" y="0.825926" />
+                            <point x="0.5" y="0.848148" />
+                            <point x="0.113021" y="0.799074" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="yellowgate" sid="741774276170840">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="open" sid="479593765823512" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="241084114448064">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="150275317105244" speed="5">
+                    <frame duration="1" hotspotX="0.487562" hotspotY="0.493827" original-source="C:\Users\heros\Desktop\Gate_Yellow.png">
+                        <collision-poly>
+                            <point x="0.00624481" y="0.186138" />
+                            <point x="0.487562" y="0.122314" />
+                            <point x="0.987666" y="0.158512" />
+                            <point x="0.987666" y="0.829142" />
+                            <point x="0.487562" y="0.852004" />
+                            <point x="0.00624481" y="0.801516" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bluegate" sid="595167338179637">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="open" sid="206977115429989" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="345764157475571">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="747540499259686" speed="5">
+                    <frame duration="1" hotspotX="0.487562" hotspotY="0.493827" original-source="C:\Users\heros\Desktop\Gate_Blue.png">
+                        <collision-poly>
+                            <point x="0.00624481" y="0.186138" />
+                            <point x="0.487562" y="0.122314" />
+                            <point x="0.987666" y="0.158512" />
+                            <point x="0.987666" y="0.829142" />
+                            <point x="0.487562" y="0.852004" />
+                            <point x="0.00624481" y="0.801516" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="greenredlever" sid="753342669418017">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="on" sid="169175212669161" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="338680077361409">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="776666958168162" speed="0">
+                    <frame duration="1" hotspotX="0.532051" hotspotY="0.369863" original-source="C:\Users\heros\Desktop\GreenSwitch_OFF.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0.99359" y="1" />
+                            <point x="1" y="0" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.467949" hotspotY="0.369863">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="0" y="0" />
+                            <point x="0.00641024" y="1" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="yellowlever" sid="825963256678316">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="on" sid="818032516803767" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="105560786301494">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="650718028719157" speed="0">
+                    <frame duration="1" hotspotX="0.532051" hotspotY="0.369863" original-source="C:\Users\heros\Desktop\YellowSwitch_OFF.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.467949" hotspotY="0.369863">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bluelever" sid="797159929954204">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="on" sid="856122723447187" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="424312955665390">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="196265373355673" speed="0">
+                    <frame duration="1" hotspotX="0.532051" hotspotY="0.488584" original-source="C:\Users\heros\Desktop\BlueSwitch_OFF.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="0" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.467949" hotspotY="0.488584" original-source="C:\Users\heros\Desktop\BlueSwitch_OFF.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="redTrigger" sid="549303103834314">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="751812192340929" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="blueTrigger" sid="987135645668314">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="777119497983536" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="yellowTrigger" sid="710084566657635">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="188698052075073" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="greenTrigger" sid="207723345639692">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="807281216727920" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bluekeys" sid="436828808636231">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="redkeys" sid="347774522545872">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="greenkeys" sid="660379032213826">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="yellowkeys" sid="253729905390059">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="timmer" sid="932782924953886">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="bg2" sid="636966253533724">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="528135012290194" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\heros\Desktop\Title_BG.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="overlay" sid="379556719308550">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="941949298037430" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>start.xml</layout>
+        <layout>level1.xml</layout>
+        <layout>level2.xml</layout>
+        <layout>level3.xml</layout>
+        <layout>level4.xml</layout>
+        <layout>level5.xml</layout>
+        <layout>endw.xml</layout>
+        <layout>end.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="39" />
+        <global-instance type="Audio" uid="40">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="Explosion 1.m4a" />
+        <file name="Explosion 1.ogg" />
+        <file name="Explosion 2.m4a" />
+        <file name="Explosion 2.ogg" />
+        <file name="Pickup-coin 1.m4a" />
+        <file name="Pickup-coin 1.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

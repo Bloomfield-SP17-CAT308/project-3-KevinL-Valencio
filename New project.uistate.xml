@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout active="1" order="0">start</layout>
+        <layout order="1">level1</layout>
+        <layout order="2">level2</layout>
+        <layout order="3">level3</layout>
+        <layout order="4">level4</layout>
+        <layout order="5">level5</layout>
+        <layout order="6">endw</layout>
+        <layout order="9">end</layout>
+        <event-sheet order="7">Event sheet 1</event-sheet>
+        <event-sheet order="8">Event sheet 2</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/player/" />
+        <folder expanded="1" path="animation-folder/platform/" />
+        <folder expanded="1" path="animation-folder/Redindicator/" />
+        <folder expanded="1" path="animation-folder/redkey/" />
+        <folder expanded="1" path="animation-folder/reddoor/" />
+        <folder expanded="1" path="animation-folder/starwell/" />
+        <folder expanded="1" path="animation-folder/greendoor/" />
+        <folder expanded="1" path="animation-folder/greenkey/" />
+        <folder expanded="1" path="animation-folder/greenindecator/" />
+        <folder expanded="1" path="animation-folder/Yellowdoor/" />
+        <folder expanded="1" path="animation-folder/yellowindecator/" />
+        <folder expanded="1" path="animation-folder/Yellowkey/" />
+        <folder expanded="1" path="animation-folder/BG/" />
+        <folder expanded="1" path="animation-folder/bluedoor/" />
+        <folder expanded="1" path="animation-folder/bluekey/" />
+        <folder expanded="1" path="animation-folder/blueindecator/" />
+        <folder expanded="1" path="animation-folder/starwell2/" />
+        <folder expanded="1" path="animation-folder/redgate/" />
+        <folder expanded="1" path="animation-folder/redlever/" />
+        <folder expanded="1" path="animation-folder/greenredgate/" />
+        <folder expanded="1" path="animation-folder/yellowgate/" />
+        <folder expanded="1" path="animation-folder/bluegate/" />
+        <folder expanded="1" path="animation-folder/greenredlever/" />
+        <folder expanded="1" path="animation-folder/yellowlever/" />
+        <folder expanded="1" path="animation-folder/bluelever/" />
+        <folder expanded="1" path="animation-folder/redTrigger/" />
+        <folder expanded="1" path="animation-folder/blueTrigger/" />
+        <folder expanded="1" path="animation-folder/yellowTrigger/" />
+        <folder expanded="1" path="animation-folder/greenTrigger/" />
+        <folder expanded="1" path="animation-folder/bg2/" />
+        <folder expanded="1" path="animation-folder/overlay/" />
+    </folders-expanded>
+</c2uistate>
